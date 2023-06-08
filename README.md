@@ -7,6 +7,7 @@ Provides a system to use the OVRSyntheticHand as a data source for Meta Avatars 
 ## Project setup
 1. Have an OVRCameraRig set up in a way that already works in your project with the ghost hands. It should have an OVRInteraction prefab on it, preferably with both hand tracking hands and controller hands. Mine looks like this:
 ![Hierarchy screenshot](screenshots/OVRCameraRigHierarchy.png)
+If you're not sure how to set this up, check on [Valem's Interaction SDK video series](https://www.youtube.com/playlist?list=PLpEoiloH-4eMRR8wAfy22ecQeCT2tIuMD). Videos 1, 3, and 7 are most important, but I highly suggest watching them all if you are unsure, especially because some necessary changes due updates to the Interaction SDK are in the comments of each tutorial.
 2. Import the Avatars package after downloading it from Meta' website or MQDH.
 3. Add an AvatarSdkManagerHorizon and remove the SampleInputManager from it.
 4. Add a new empty gameobject (I called mine Avatar) and add a SampleAvatarEntity to it.
